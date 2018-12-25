@@ -17,7 +17,7 @@ import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 
 @Configuration
 @EnableKafka
-class SpringSSEConfiguration {
+class KafkaConfiguration {
 	 
 	private static Map<String, Object> configProps = new HashMap<>(); 
 	private static String bootstrapAddress = "0.0.0.0:9092";

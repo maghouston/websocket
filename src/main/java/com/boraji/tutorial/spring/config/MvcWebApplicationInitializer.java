@@ -11,7 +11,7 @@ public class MvcWebApplicationInitializer  extends AbstractAnnotationConfigDispa
 
 	   @Override
 	   protected Class<?>[] getServletConfigClasses() {
-	      return new Class[] { MvcWebConfig.class,WebSocketConfig.class, SpringSSEConfiguration.class };
+	      return new Class[] { MvcWebConfig.class,WebSocketConfig.class, KafkaConfiguration.class };
 	   }
 
 	   @Override
