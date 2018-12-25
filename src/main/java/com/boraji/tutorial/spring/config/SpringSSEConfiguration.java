@@ -45,14 +45,5 @@ class SpringSSEConfiguration {
 	        return new DefaultKafkaConsumerFactory<Integer, String>(configProps);
 	    }
 	    
-	    
-	    @Bean
-		public static Consumer<Long, String> createConsumer() {
-	       
-	        Consumer<Long, String> consumer = new KafkaConsumer<>(configProps);
-	        consumer.subscribe(Collections.singletonList("test"));
-	        return consumer;
-	    }
-	    
 	
 }
